@@ -1,0 +1,208 @@
+:root {
+  --slider-padding: 10rem;
+}
+
+.carousel_slider {
+  overflow: hidden;
+}
+
+.slider {
+  --slider-index: 0;
+  display: flex;
+  gap: 1.5rem;
+  transform: translateX(calc(var(--slider-index) * -240px));
+  transition: all 0.4s;
+  width: fit-content;
+}
+
+/* Home Section 2 -->> Carousel */
+
+.second_section {
+  margin-bottom: 112px;
+}
+
+.image_card > img {
+  width: 340px;
+  height: 382px;
+  border-radius: 24px;
+  flex: 0 0 25%;
+  aspect-ratio: 16 / 8;
+  padding: 0.25rem;
+}
+
+.handle_boxes {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.handle_btn {
+  font-size: 25px;
+  cursor: pointer;
+  padding: 12px 16px;
+  background-color: #e0e3eb;
+  border-radius: 32px;
+  transition: 0.5s;
+}
+
+.handle_btn:hover,
+.handle_btn:focus {
+  background: #10b981;
+}
+
+.handle {
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+}
+
+.image_card {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+.price_title {
+  position: absolute;
+  bottom: 24px;
+  left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 12px;
+  background: #fee2e2;
+  border-radius: 32px;
+  color: #ef4444;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.price_title:hover {
+  transform: translateY(-5px);
+}
+
+.price_title h3,
+.home_icon h3,
+.best_icon h3,
+.slider_link a {
+  font-family: "Lexend";
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.home_icon {
+  background: #dbeafe;
+  color: #1d4ed8;
+}
+
+.best_icon {
+  background: #d1fae5;
+  color: #047857;
+}
+
+.house_description h2,
+.house_description h4,
+.description h2 {
+  color: #0e1735;
+  font-family: "Lexend";
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+
+.house_description h4 {
+  color: #3c4563;
+  font-size: 20px;
+}
+
+.description h2 {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0;
+}
+
+.description p {
+  color: #888b97;
+  font-family: "Lexend";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.owner_description,
+.slider_link {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.carousel_slider_content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 140px;
+  margin-bottom: 90px;
+}
+
+.slider_link {
+  transform: translateX(-45px);
+}
+
+.slider_link a {
+  color: #f59e0b;
+}
+
+.slider_link a:hover {
+  color: #a5792d;
+}
+
+.carousel_slider_subtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.carousel_title {
+  color: #1b1c57;
+  font-family: "Lexend";
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.button_chooser {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.house_choose_btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888b97;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  padding: 12px 24px;
+  background: #E0E3EB;
+  border-radius: 32px;
+  transition: 0.5s;
+}
+
+.house_choose_btn:hover,
+.house_choose_btn:focus {
+  background: #D1FAE5;
+  color: #10B981;
+}

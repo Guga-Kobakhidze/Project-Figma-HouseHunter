@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lexend", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .container {
+    max-width: 1520px;
+    padding: 0 2%;
+    margin: 0 auto;
+  }
+  
+  .section_container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
