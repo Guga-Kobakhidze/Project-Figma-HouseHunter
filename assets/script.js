@@ -27,3 +27,20 @@ function onHandleClick(handle) {
 
   slider.style.setProperty("--slider-index", newSliderIndex);
 }
+
+
+const carousel = document.querySelector('.carousel');
+const images = document.querySelectorAll('.carousel_inner > img');
+
+images.forEach((image, index) => {
+  image.addEventListener('click', () => {
+    const scrollAmount = index * (image.offsetWidth + 56); // Adjust based on your gap value
+    const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
+    const targetScroll = scrollAmount > maxScroll ? 0 : scrollAmount;
+
+    carousel.scroll({
+      left: targetScroll,
+      behavior: 'smooth',
+    });
+  });
+});
