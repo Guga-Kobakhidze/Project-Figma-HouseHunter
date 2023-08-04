@@ -59,6 +59,17 @@
   .carousel_inner_owner {
     display: none;
   }
+  .section_content_5 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 68px;
+  }
+  .subscribe_section_img {
+    width: 100%;
+  }
+  .subscribe_section_content {
+    padding: 20px 0;
+  }
 }
 
 /* @media (max-width: 767px) */
