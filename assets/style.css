@@ -66,7 +66,52 @@ a {
 .nav_menu {
   display: flex;
   align-items: center;
-  gap: 40px;
+  gap: 30px;
+}
+
+.hamburger_menu {
+  color: black;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.secondary_menu {
+  position: fixed;
+  top: 0;
+  left: -280px;
+  background: #10b98183;
+  width: 280px;
+  height: 100%;
+  z-index: 2;
+  transition: all 0.7s ease-in-out;
+}
+
+.media_navigation .secondary_menu {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 100px 0;
+}
+
+.media_navigation .secondary_menu li {
+  width: 100%;
+}
+
+.media_navigation .secondary_menu a {
+  border-radius: 5px;
+  border: 1px solid transparent;
+}
+
+.hamburger_menu {
+  display: none;
+}
+
+#menu {
+  display: none;
+}
+
+#menu:checked ~ .secondary_menu {
+  left: 0;
 }
 
 /* Home Section */
@@ -107,7 +152,9 @@ a {
   -webkit-text-stroke: 1px #1b1c57;
 }
 
-.paragraph {
+.paragraph,
+.last_cards p,
+.new_card p {
   color: #626687;
   font-family: "Lexend";
   font-size: 16px;
@@ -115,6 +162,11 @@ a {
   line-height: 28px;
   margin-bottom: 32px;
   opacity: 0.75;
+}
+
+.last_cards p,
+.new_card p {
+  margin: 0;
 }
 
 .vector_1,
@@ -146,7 +198,8 @@ a {
   left: 20px;
 }
 
-.btn {
+.btn,
+.btn2 {
   position: absolute;
   top: 2px;
   right: 23px;
@@ -157,7 +210,14 @@ a {
   transition: 0.5s;
 }
 
-.btn a {
+.btn2 {
+  position: relative;
+  right: 0;
+  top: 0;
+}
+
+.btn a,
+.btn2 a {
   color: #fff;
   font-family: "Lexend";
   font-size: 14px;
@@ -275,4 +335,82 @@ a {
 .vector_3 {
   right: 0;
   top: -140px;
+}
+
+/* Home Section 4 */
+
+.home_section_4 {
+  margin-bottom: 111px;
+}
+
+/* Home Section 5 */
+
+.section_content_5 {
+  margin-bottom: 122px;
+}
+
+.section_title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  margin-bottom: 42px;
+}
+
+.section_content_5 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 68px;
+}
+
+.last_cards,
+.new_card {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.new_card {
+  gap: 12px;
+}
+
+.new_card .paragraph {
+  margin-bottom: 0;
+}
+
+.last_card {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.last_card_description {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.last_card_owner,
+.date_time {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.short_description {
+  color: #1b1c57;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 32px;
+  text-transform: capitalize;
+}
+
+.name_owner {
+  color: #3c4563;
+  font-family: Lexend;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
 }

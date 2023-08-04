@@ -263,7 +263,7 @@
   height: 400px;
   border-radius: 8px;
   opacity: 0.699999988079071;
-  background: url(<path-to-image>), lightgray 50% / cover no-repeat, #c4c4c4;
+  background: lightgray 50% / cover no-repeat, #c4c4c4;
 }
 
 .carousel_inner img:hover {
