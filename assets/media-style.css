@@ -70,6 +70,29 @@
   .subscribe_section_content {
     padding: 20px 0;
   }
+  .location_content .btn {
+    right: 14px;
+  }
+  .btn.btn3 {
+    top: 3px;
+    right: 3px;
+  }
+  .home_section,
+  .carousel_slider_content,
+  .carousel {
+    margin-bottom: 5px;
+  }
+  .home_section_2,
+  .home_section_3,
+  .home_section_4,
+  .home_section_5,
+  .home_section_6,
+  .footer {
+    margin-bottom: 80px;
+  }
+  .home_content_section {
+    gap: 40px;
+  }
 }
 
 /* @media (max-width: 767px) */

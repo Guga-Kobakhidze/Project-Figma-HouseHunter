@@ -12,7 +12,6 @@ a {
 .container {
   overflow: hidden;
   max-width: 1500px;
-  padding: 0 2%;
   margin: 0 auto;
 }
 
@@ -154,7 +153,8 @@ a {
 
 .paragraph,
 .last_cards p,
-.new_card p {
+.new_card p,
+.footer_menu_list a {
   color: #626687;
   font-family: "Lexend";
   font-size: 16px;
@@ -359,7 +359,9 @@ a {
 
 /* Home Section 5 */
 
-.section_content_5 {
+.home_section_5,
+.home_section_6,
+.footer {
   position: relative;
   margin-bottom: 122px;
 }
@@ -441,7 +443,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  right:0;
+  right: 0;
   padding: 65px 0;
   transform: translateX(-50% -50%);
   display: flex;
@@ -455,4 +457,94 @@ a {
   position: absolute;
   top: 3px;
   right: 3px;
+}
+
+/* Footer Section */
+
+.footer_section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer_menu_content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  gap: 88px;
+}
+
+.footer_logo_content {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+
+.footer_logo_content .paragraph {
+  margin: 0;
+  width: 380px;
+}
+
+.contact_menu .paragraph {
+  margin: 0;
+}
+
+.social_icons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 24px;
+}
+
+.social_icons img {
+  transition: 0.5s;
+}
+
+.social_icons a:hover > img {
+  transform: scale(1.2);
+}
+
+.footer_menu_title {
+  color: #0e1735;
+  font-family: "Lexend";
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+
+.contact_menu .footer_menu_title {
+  margin: 0;
+}
+
+.footer_menu_list,
+.contact_menu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.vector_7,
+.vector_8 {
+  position: absolute;
+  width: 800px;
+  height: 600px;
+  z-index: -1;
+}
+
+.vector_7 {
+  bottom: -125px;
+  right: 0;
+}
+
+.vector_8 {
+  bottom: -125px;
+  right: 15px;
+}
+
+.footer_menu_list a:hover,
+.contact_menu a:hover {
+  color: #043625;
 }
