@@ -178,7 +178,7 @@
 .carousel_title {
   color: #1b1c57;
   font-family: "Lexend";
-  font-size: 32px;
+  font-size: clamp(18px, 6vw, 32px);
   font-weight: 600;
   text-transform: capitalize;
 }

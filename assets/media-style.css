@@ -41,7 +41,7 @@
     margin-top: 25px;
   }
   .first_house {
-    width: 80%;
+    width: 600px;
     height: 480px;
     margin: 0 5%;
   }
@@ -93,6 +93,123 @@
   .home_content_section {
     gap: 40px;
   }
+  .footer_section {
+    justify-content: center;
+    text-align: center;
+    gap: 40px;
+  }
+  .social_icons {
+    justify-content: center;
+  }
+  .last_cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-/* @media (max-width: 767px) */
+@media screen and (max-width: 766px) {
+  .house_choose_btn {
+    padding: 3px 12px;
+  }
+  .location_input {
+    width: 100%;
+    padding-right: 125px;
+  }
+  .location_content .btn {
+    right: 3px;
+  }
+  .button_chooser {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .carousel_slider_subtitle {
+    align-items: center;
+  }
+  .slider_link {
+    margin-left: 80px;
+  }
+  .handle_boxes {
+    margin-bottom: 5px;
+  }
+  .image_card > img {
+    width: 298px;
+    height: 320px;
+  }
+  .house_description h2,
+  .house_description h4,
+  .description h2 {
+    font-size: 16px;
+  }
+  .description p {
+    font-size: 10px;
+  }
+  .detail_grid {
+    width: 345px;
+    gap: 23px 2px;
+  }
+  .home_content_section .owner_description img {
+    display: none;
+  }
+  .owner_description {
+    margin-left: 15px;
+  }
+  .first_house {
+    width: 300px;
+    height: 343px;
+  }
+  .media_section img:not(:first-child) {
+    display: none;
+  }
+  .carousel_inner img {
+    width: 355px;
+    height: 322px;
+  }
+  .carousel_inner_content {
+    width: 291px;
+    height: 132px;
+  }
+  .carousel_inner_content {
+    left: 36px;
+    bottom: 139px;
+  }
+  .carousel_inner_content .paragraph {
+    display: none;
+  }
+  .last_card {
+    display: flex;
+    align-items: start;
+    gap: 32px;
+    flex-direction: column;
+  }
+  .last_card_image {
+    width: 250px;
+  }
+  .short_description,
+  .footer_logo_content .paragraph {
+    font-size: 12px;
+    width: 300px;
+  }
+  .new_card_image {
+    width: 100%;
+  }
+  .subscribe_section_img {
+    display: none;
+  }
+  .subscribe_section_content {
+    position: relative;
+  }
+  .footer_menu_content {
+    justify-content: center;
+  }
+  .vector_1,
+  .vector_2,
+  .vector_3,
+  .vector_4,
+  .vector_5,
+  .vector_6,
+  .vector_7,
+  .vector_8 {
+    display: none;
+  }
+}
