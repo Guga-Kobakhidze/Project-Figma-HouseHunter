@@ -212,12 +212,17 @@ a {
   transition: 0.5s;
 }
 
+.btn {
+  border: none;
+}
+
 .btn2 {
   position: relative;
   right: 0;
   top: 0;
 }
 
+.btn,
 .btn a,
 .btn2 a {
   color: #fff;

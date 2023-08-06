@@ -1,5 +1,4 @@
 <?php include_once "./header.php" ?>
-<?php include "./assets/variables/functions.php" ?>
 <img class="vector_1" src="./assets/images/Vector.png" alt="" />
 <img class="vector_2" src="./assets/images/Vector1.png" alt="" />
 <section class="home_section">
@@ -15,14 +14,14 @@
                 </p>
                 <div class="location_content">
                     <img src="./assets/images/location.png" alt="location" />
-                    <input class="location_input" type="text" name="text"
-                        placeholder="Search for the location you want!" />
-                    <div class="btn">
-                        <a href="#">Search
-                            <img src="./assets/images/rightarrow.png" alt="rightarrow" /></a>
-                    </div>
+                    <form action="./index.php" method="post">
+                        <input class="location_input" type="text" name="text"
+                            placeholder="Search for the location you want!" />
+                        <button class="btn" type="submit">Search
+                            <img src="./assets/images/rightarrow.png" alt="rightarrow" /></button>
+                    </form>
                 </div>
-                <p class="paragraph">Our Partnership</p>
+                <p class="paragraph"> <?php getForms(); ?> </p>
                 <div class="brand_images">
                     <img src="./assets/images/traveloka.png" alt="traveloka" />
                     <img src="./assets/images/tiket.com.png" alt="tiket.com" />
@@ -134,7 +133,7 @@
                 </h2>
                 <div class="location_content">
                     <img src="./assets/images/emailicon.png" alt="emailicon" />
-                    <input class="location_input" type="text" name="text" placeholder="Your email here" />
+                    <input class="location_input" type="email" name="email" placeholder="Your email here" />
                     <div class="btn btn3">
                         <a href="#">Subsribe Now</a>
                     </div>

@@ -18,29 +18,7 @@
                 </div>
             </div>
             <div class="footer_menu_content">
-                <div class="property_menu">
-                    <h3 class="footer_menu_title">Property</h3>
-                    <ul class="footer_menu_list">
-                        <li><a href="#">House</a></li>
-                        <li><a href="#">Apartment</a></li>
-                        <li><a href="#">Villa</a></li>
-                    </ul>
-                </div>
-                <div class="article_menu">
-                    <h3 class="footer_menu_title">Article</h3>
-                    <ul class="footer_menu_list">
-                        <li><a href="#">New Article</a></li>
-                        <li><a href="#">Popular Article</a></li>
-                        <li><a href="#">Most Read</a></li>
-                        <li><a href="#">Tips & Tricks</a></li>
-                    </ul>
-                </div>
-                <div class="contact_menu">
-                    <h3 class="footer_menu_title">Contact</h3>
-                    <p class="paragraph">2464 Royal Ln. Mesa, New Jersey 45463</p>
-                    <a href="#" class="paragraph">(671) 555-0110</a>
-                    <a href="#" class="paragraph">info@hounter.com</a>
-                </div>
+                <?php get_footer(); ?>
             </div>
         </div>
     </div>

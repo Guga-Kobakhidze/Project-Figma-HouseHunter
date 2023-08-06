@@ -1,3 +1,4 @@
+<?php include "./assets/variables/functions.php" ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,31 +27,14 @@
                 <div class="navigation">
                     <nav class="nav_menu">
                         <ul class="main_navigation">
-                            <li>
-                                <a href="#" class="house_choose_btn nav_menu_btn">About Us</a>
-                            </li>
-                            <li>
-                                <a href="#" class="house_choose_btn nav_menu_btn">Article</a>
-                            </li>
-                            <li>
-                                <a href="#" class="house_choose_btn nav_menu_btn">Property
-                                    <img src="./assets/images/downarrow.png" alt="downarrow" /></a>
-                            </li>
+                            <?php get_header(); ?>
                         </ul>
                         <a href="#" class="house_choose_btn">Sign Up!</a>
                         <div class="media_navigation">
                             <input type="checkbox" id="menu" />
                             <label for="menu"><span class="hamburger_menu">&#9776;</span></label>
                             <ul class="secondary_menu">
-                                <li>
-                                    <a href="#" class="house_choose_btn nav_menu_btn">About Us</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="house_choose_btn nav_menu_btn">Article</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="house_choose_btn nav_menu_btn">Property</a>
-                                </li>
+                                <?php get_hidden_header(); ?>
                             </ul>
                         </div>
                     </nav>

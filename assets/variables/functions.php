@@ -268,3 +268,89 @@ function getTitle($title, $title2, $title3, $title4)
             <h2 class="carousel_title">' . $titleMerge['subtitle'] . '</h2>';
     return $titleMerge;
 }
+
+// Header --> Function
+
+$headerMenu = [
+    'title' => ['About Us', 'Article', 'Property',],
+    'image' => ['', '', './assets/images/downarrow.png'],
+];
+
+function get_header()
+{
+    global $headerMenu;
+    for ($i = 0; $i < sizeof($headerMenu['title']); $i++) {
+        if ($i != 0 && $i != 1) {
+            $image = '<li>
+                        <a href="#" class="house_choose_btn nav_menu_btn">' . $headerMenu['title'][$i] . '
+                        <img src="' . $headerMenu['image'][$i] . '"/></a>
+                    </li>';
+        } else {
+            $image = '<li>
+                        <a href="#" class="house_choose_btn nav_menu_btn">' . $headerMenu['title'][$i] . '</a>
+                    </li>';
+        }
+        echo $image;
+    }
+    return $headerMenu;
+}
+
+function get_hidden_header()
+{
+    global $headerMenu;
+    for ($i = 0; $i < sizeof($headerMenu['title']); $i++) {
+        echo '<li>
+                 <a href="#" class="house_choose_btn nav_menu_btn">' . $headerMenu['title'][$i] . '</a>
+            </li>';
+    }
+    return $headerMenu;
+}
+
+// Footer --> Function
+
+$footerMenu = [
+    'title' => ['Property', 'Article', 'Contact',],
+    'first_link' => ['House', 'New Article', '2464 Royal Ln. Mesa, New Jersey 45463',],
+    'second_link' => ['Apartment', 'Popular Article', '(671) 555-0110',],
+    'third_link' => ['Villa', 'Most Read', 'info@hounter.com',],
+    'fourth_link' => ['', 'Tips & Tricks', '',],
+];
+
+function get_footer()
+{
+    global $footerMenu;
+    for ($i = 0; $i < sizeof($footerMenu['title']); $i++) {
+        if ($i == 0) {
+            $class = 'property_menu';
+        } elseif ($i == 1) {
+            $class = 'article_menu';
+        } else {
+            $class = 'contact_menu';
+        }
+        echo '<div class="' . $class . '">
+                    <h3 class="footer_menu_title">' . $footerMenu['title'][$i] . '</h3>
+                    <ul class="footer_menu_list">
+                        <li><a href="#">' . $footerMenu['first_link'][$i] . '</a></li>
+                        <li><a href="#">' . $footerMenu['second_link'][$i] . '</a></li>
+                        <li><a href="#">' . $footerMenu['third_link'][$i] . '</a></li>
+                        <li><a href="#">' . $footerMenu['fourth_link'][$i] . '</a></li>
+                    </ul>
+            </div>';
+    }
+    return $footerMenu;
+}
+
+// Forms --> function 
+
+$location = $_POST['text'];
+
+function getForms()
+{
+    global $location;
+    if ($_POST['text']) {
+        echo "You are looking for '$location'. we'll contact you soon!";
+    } else {
+        echo 'Our Partnership';
+    }
+    return $location;
+}
