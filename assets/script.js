@@ -1,3 +1,5 @@
+// for carousel Slider
+
 document.addEventListener("click", (e) => {
   let handle;
   if (e.target.matches(".handle")) {
@@ -22,19 +24,20 @@ function onHandleClick(handle) {
   }
 
   if (handle.classList.contains("right-handle")) {
-    newSliderIndex = (sliderIndex + 1) % totalSlides;
+    newSliderIndex = (sliderIndex + 1) % (totalSlides - 3);
   }
 
   slider.style.setProperty("--slider-index", newSliderIndex);
 }
 
+// for carousel Slider2 
 
 const carousel = document.querySelector('.carousel');
 const images = document.querySelectorAll('.carousel_inner > img');
 
 images.forEach((image, index) => {
   image.addEventListener('click', () => {
-    const scrollAmount = index * (image.offsetWidth + 56); // Adjust based on your gap value
+    const scrollAmount = index * (image.offsetWidth + 56); 
     const maxScroll = carousel.scrollWidth - carousel.offsetWidth;
     const targetScroll = scrollAmount > maxScroll ? 0 : scrollAmount;
 

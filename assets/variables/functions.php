@@ -342,15 +342,17 @@ function get_footer()
 
 // Forms --> function 
 
-$location = $_POST['text'];
 
 function getForms()
 {
-    global $location;
-    if ($_POST['text']) {
-        echo "You are looking for '$location'. we'll contact you soon!";
+    if (isset($_POST['text'])) {
+        $location = $_POST['text'];
+        if (!empty($location)) {
+            echo "You are looking for '$location'. We'll contact you soon!";
+        } else {
+            echo 'Our Partnership';
+        }
     } else {
         echo 'Our Partnership';
     }
-    return $location;
 }

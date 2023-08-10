@@ -14,9 +14,8 @@
                 </p>
                 <div class="location_content">
                     <img src="./assets/images/location.png" alt="location" />
-                    <form action="./index.php" method="post">
-                        <input class="location_input" type="text" name="text"
-                            placeholder="Search for the location you want!" />
+                    <form action="" method="post">
+                        <input class="location_input" type="text" name="text" placeholder="Search for the location you want!" />
                         <button class="btn" type="submit">Search
                             <img src="./assets/images/rightarrow.png" alt="rightarrow" /></button>
                     </form>
@@ -37,13 +36,14 @@
     <div class="container">
         <div class="carousel_slider_content">
             <div class="carousel_slider_subtitle">
-                <?php getTitle($title, [], [], []); ?>
+                <?php
+                getTitle($title, [], [], []);
+                ?>
             </div>
             <div class="button_chooser">
                 <a href="#" class="house_choose_btn"><img src="./assets/images/Housebtn.png" alt="house" />House</a>
                 <a href="#" class="house_choose_btn"><img src="./assets/images/villabtn.png" alt="house" />Villa</a>
-                <a href="#" class="house_choose_btn"><img src="./assets/images/apartmentbtn.png"
-                        alt="house" />Apartment</a>
+                <a href="#" class="house_choose_btn"><img src="./assets/images/apartmentbtn.png" alt="house" />Apartment</a>
             </div>
             <div class="handle_boxes">
                 <button class="handle left-handle">

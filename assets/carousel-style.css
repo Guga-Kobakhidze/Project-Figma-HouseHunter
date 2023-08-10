@@ -10,7 +10,7 @@
   --slider-index: 0;
   display: flex;
   gap: 1.5rem;
-  transform: translateX(calc(var(--slider-index) * -240px));
+  transform: translateX(calc(var(--slider-index) * -382px));
   transition: all 0.4s;
   width: fit-content;
 }
@@ -22,7 +22,7 @@
 }
 
 .image_card > img {
-  width: 340px;
+  width: 358px;
   height: 382px;
   border-radius: 24px;
   flex: 0 0 25%;
