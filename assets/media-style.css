@@ -11,7 +11,7 @@
   }
   .slider {
     --slider-index: 0;
-    transform: translateX(calc(var(--slider-index) * -320px));
+    transform: translateX(calc(var(--slider-index) * -380px));
   }
   .header_section {
     width: 95%;
